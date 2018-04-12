@@ -15,21 +15,33 @@ From each window, a vector of features was obtained by calculating variables fro
   1- Merges the training and the test sets to create one data set.
   
   2- Extracts only the measurements on the mean and standard deviation for each measurement.
-  3- Uses descriptive activity names to name the activities in the data set
+  
+  3- Uses descriptive activity names to name the activities in the data set.
+  
   4- Appropriately labels the data set with descriptive variable names.
+  
   5- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for 
   each activity and each subject.
   
 ## The R script, run_analysis.R, does the following:
   1.Download the zip file from URL
+  
   2.Extract zip file
+  
   3.Set work directory 
+  
   4.Read the activity and feature info
-  5.Read both the training and test datasets, keeping only those columns which refer to mean or standard deviation
-  6.Merges the two datasets
-  7.Converts the activity and subject columns into factors
+  
+  5.Read both the training and test datasets, keeping only those columns which refer to mean or standard deviation.
+  
+  6.Merges the two datasets.
+  
+  7.Converts the activity and subject columns into factors.
+  
   8.Melted dataset & dcast to calc the average of each variable for each activity and each subject.
+  
   9.Creates independent tidy data set with the average of each variable for each activity and each subject.
+  
   10.The end result is shown in the file tidy.txt.
 
 
